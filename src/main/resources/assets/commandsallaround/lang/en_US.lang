@@ -1,0 +1,6 @@
+# COMMANDS
+commands.commandsallaround.success=Successfully changed.
+commands.sv_gravity.usage=/sv_gravity <up/down> [player]
+commands.sv_gravity.invalid_property=Direction must be up or down
+commands.autorotateonrespawn.usage=/autoRotateOnRespawn <true/false>
+commands.autorotateonlogin.usage=/autoRotateOnLogin <true/false>

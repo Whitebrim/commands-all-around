@@ -1,0 +1,19 @@
+[
+  {
+    "modid": "commandsallaround",
+    "name": "Commandsallaround",
+    "description": "/sv_gravity",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "brim.ml",
+    "updateUrl": "",
+    "authorList": [
+      "Whitebrim",
+      "Tie"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
