@@ -1,6 +1,8 @@
 # COMMANDS
 commands.commandsallaround.success=Successfully changed.
-commands.sv_gravity.usage=/sv_gravity <up/down> [player]
-commands.sv_gravity.invalid_property=Direction must be up or down
+commands.sv_gravity.usage=/sv_gravity <up/down/north/south/west/east> [player]
+commands.sv_gravity.invalid=Direction must be <up/down/north/south/west/east>
 commands.autorotateonrespawn.usage=/autoRotateOnRespawn <true/false>
 commands.autorotateonlogin.usage=/autoRotateOnLogin <true/false>
+commands.autorotatedirection.usage=/autoRotateDirection <up/down/north/south/west/east>
+commands.autorotatedirection.invalid='%s' is not <up/down/north/south/west/east>

@@ -32,7 +32,7 @@ public class Main {
 
     public static final String MOD_ID = "commandsallaround";
     public static final String MOD_NAME = "Commandsallaround";
-    public static final String VERSION = "1.3";
+    public static final String VERSION = "1.4";
 
     @Mod.Instance(MOD_ID)
     public static Main INSTANCE;
@@ -43,6 +43,7 @@ public class Main {
         event.registerServerCommand(new GravityCommand());
         event.registerServerCommand(new AutoRotateOnLoginCommand());
         event.registerServerCommand(new AutoRotateOnRespawnCommand());
+        event.registerServerCommand(new AutoRotateDirectionCommand());
     }
 
     @Mod.EventHandler
@@ -50,6 +51,7 @@ public class Main {
         if(!ConfigHandler.hasCategory("Auto rotate")){
             ConfigHandler.writeConfig("Auto rotate", "rotate on login", true);
             ConfigHandler.writeConfig("Auto rotate", "rotate on respawn", true);
+            ConfigHandler.writeConfig("Auto rotate", "rotate direction", "up");
         }
     }
 }

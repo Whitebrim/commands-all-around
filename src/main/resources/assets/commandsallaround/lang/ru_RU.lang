@@ -1,6 +1,8 @@
 # COMMANDS
 commands.commandsallaround.success=Успешно изменено.
-commands.sv_gravity.usage=/sv_gravity (up/down) [игрок]
-commands.sv_gravity.invalid_property=Направление должно быть указано как up или down
+commands.sv_gravity.usage=/sv_gravity <up/down/north/south/west/east> [игрок]
+commands.sv_gravity.invalid_property=Направление должно быть указано как <up/down/north/south/west/east>
 commands.autorotateonrespawn.usage=/autoRotateOnRespawn <true/false>
 commands.autorotateonlogin.usage=/autoRotateOnLogin <true/false>
+commands.autorotatedirection.usage=/autoRotateDirection <up/down/north/south/west/east>
+commands.autorotatedirection.invalid='%s' не является <up/down/north/south/west/east>

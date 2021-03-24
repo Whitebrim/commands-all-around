@@ -1,8 +1,6 @@
 package com.whitebrim.commandsallaround;
 
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
@@ -18,17 +16,16 @@ public class EventHandler {
     public static void playerRespawn(PlayerEvent.PlayerRespawnEvent event)
     {
         if(ConfigHandler.getBoolean("Auto rotate", "rotate on respawn")){
-            API.forceSetPlayerGravity(EnumGravityDirection.UP, (EntityPlayerMP)event.player, false);
+            API.forceSetPlayerGravity(AutoRotateDirectionCommand.GetEnum(ConfigHandler.getString("Auto rotate", "rotate direction")), (EntityPlayerMP)event.player, false);
             GravityDirectionCapability.getGravityCapability(event.player).setTimeoutTicks(Int.MaxValue());
         }
-
     }
 
     @SubscribeEvent
     public static void playerLogin(PlayerEvent.PlayerLoggedInEvent event)
     {
         if(ConfigHandler.getBoolean("Auto rotate", "rotate on login")) {
-            API.forceSetPlayerGravity(EnumGravityDirection.UP, (EntityPlayerMP) event.player, false);
+            API.forceSetPlayerGravity(AutoRotateDirectionCommand.GetEnum(ConfigHandler.getString("Auto rotate", "rotate direction")), (EntityPlayerMP) event.player, false);
             GravityDirectionCapability.getGravityCapability(event.player).setTimeoutTicks(Int.MaxValue());
         }
     }

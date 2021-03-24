@@ -3,7 +3,7 @@
     "modid": "commandsallaround",
     "name": "Commandsallaround",
     "description": "/sv_gravity",
-    "version": "${version}",
+    "version": "1.4",
     "mcversion": "${mcversion}",
     "url": "brim.ml",
     "updateUrl": "",
